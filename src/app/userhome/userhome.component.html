@@ -1,0 +1,78 @@
+
+<!-- header -->
+<header>
+    <!-- header inner -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                    <div class="full">
+                        <div class="center-desk">
+                            <div class="logo">
+                                <img src="/assets/images/logo.png"  width="50%" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" routerLink="/personalinfo" onclick="deleteuser()">Create new Resume</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown nav-item">
+                                        <button class="drop dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            {{usersign.username}}
+                                        </button>
+                                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="" (click)="deletedata()">Log Out</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header inner -->
+<!-- end header -->
+
+<!-- Hosting -->
+<div class="usericons">
+    <div>
+        <div>
+            <div>
+                <div class="titlepage userhome row" id="userhome">
+                    <div class="col-md-3">
+                        <a class="nav-link" routerLink="/personalinfo"><img src="/assets/images/newfile.png" alt=""></a><h1>Create New Resume</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Hosting -->
+
+<!--  footer -->
+<footer>
+    <div class="foot">
+        <div class="copyrightuser">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2021 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->

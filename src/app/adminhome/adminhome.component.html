@@ -1,0 +1,76 @@
+<div style="background-image: url(/assets/images/background.jpg);">
+    <div style="background: #0c0f38;">
+        <img style="margin-top: 2em;" src="/assets/images/logo.png" alt="" height="10%" width="10%"><br><br>
+    </div>
+    <div class="row major">
+        <div class="col-md-2 sidebar">
+            <a (click)="add();">Add ADMIN</a><br><br>
+            <a (click)="user();">USERS</a><br><br>
+            <a (click)="admin();">ADMIN</a><br><br>
+            <a href="/adminlogin" (click)="delete();">Log Out</a>
+        </div>
+        <div class="col side">
+            <div id="adminsignup">
+                <form class="addadmin" [formGroup]="adminForm" (ngSubmit)="addadmin()">
+                    <h1>ADD ADMIN</h1>
+                    <div id="alert"></div>
+                    <input type="email" name="email" placeholder="Email" formControlName="email" [(ngModel)]="admindata.email">
+                    <div *ngIf="adminForm.controls.email.invalid" class="col danger">
+                        <div *ngIf="adminForm.controls.email.errors.pattern">
+                            Enter a valid Email address
+                        </div>
+                    </div>
+                    <input [type]="hide ? 'password' : 'text'" name="password" placeholder="Password" formControlName="password" [(ngModel)]="admindata.password">
+                    <div *ngIf="adminForm.controls.password.invalid" class="col danger">
+                        <div *ngIf="adminForm.controls.password.errors.minlength">
+                            password: minimum length 6.
+                        </div>
+                    </div>
+                    <a mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </a>
+                    <input type="submit" [disabled]="adminForm.invalid" value="ADD">
+                </form> 
+            </div>
+            <div id="userdata">
+                <table class="table">
+                    <tr class="row">
+                        <th class="col-md-3">User Name</th>
+                        <th class="col-md-3">Email</th>
+                    </tr>
+                    <tr class="row" *ngFor='let user of users'>
+                        <td class="col-md-3">{{user.username}}</td>
+                        <td class="col-md-3">{{user.email}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="admindata">
+                <table class="table">
+                    <tr class="row">
+                        <th class="col-md-3">Admin Email</th>
+                        <th class="col-md-3">Password</th>
+                    </tr>
+                    <tr class="row" *ngFor='let admin of admins'>
+                        <td class="col-md-3">{{admin.email}}</td>
+                        <td class="col-md-3">{{admin.password}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+<!--  footer -->
+<footer>
+    <div class="foot">
+        <div class="copyrightuser">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2021 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+</div>

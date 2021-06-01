@@ -1,0 +1,103 @@
+.sidebar{
+    background: #0c0f38; 
+    padding: 5em;
+    border-radius: 2em;
+    margin-left: 3em;
+}
+.side{
+    padding: 5em;
+    border: 2px solid #0c0f38;
+    border-radius: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+.sidebar a{
+    color: white;
+    font-size: medium;
+}
+.sidebar a:hover{
+    color: rgb(224, 221, 0);
+    border: 1px solid white;
+    padding: 10% 10% 10% 10%;
+    border-radius: 2em;
+}
+.major{
+    margin-top: 5%;
+}
+.addadmin{
+    width: 400px;
+    padding: 40px;
+    transform: translate(85%);
+    background: white;
+    text-align: center;
+    border-radius: 3em;
+    border: 1px solid #0c0f38;
+}
+.addadmin h1{
+    color: #0c0f38;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.addadmin input[type = "email"],.addadmin input[type = "password"],.addadmin input[type = "text"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #0c0f38;
+    padding: 8px 4px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-weight: bold;
+    font-size: 18px;
+}
+.addadmin input[type = "email"]:focus,.addadmin input[type = "password"]:focus,.addadmin input[type = "text"]:focus{
+    width: 280px;
+}
+.addadmin input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 8px 40px;
+    width: 200;
+    outline: none;
+    color: #0c0f38;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+.addadmin input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+.table{
+    text-align: left;
+    margin-left: 24%;
+}
+th, td {
+    border: 1px solid #0c0f38;
+    border-radius: .5em;
+    background: white;
+    margin: 0% 0% 1% 1%;
+  }
+.table th{
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+.table tr{
+    font-size: 18px;
+}
+.foot {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

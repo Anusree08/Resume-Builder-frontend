@@ -1,0 +1,125 @@
+.res {
+    margin-top: 5em;
+    font-family: "Poppins", sans-serif;
+    /* word-spacing: .1em; */
+  }
+  .high{
+      margin-top: 5em;
+  }
+  hr {
+    border: 0;
+    width: 96%;
+    color: black;
+    height: 2px;
+}
+  h1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 250%;
+  }
+  
+  h2 {
+    font-weight: 400;
+    display: inline-block;
+  }
+    
+  .data {
+    width: 70rem;
+    padding: 3rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    background:rgb(238, 238, 238);
+  }
+  
+  .headers {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+  }
+  
+  .headers-l {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  .first-name {
+    font-weight: 500;
+    font-size: larger;
+    margin: 0;
+    
+  }
+  
+  .headers-r {
+    width: 100%;
+    display: grid;
+    justify-items: end;
+  }
+  
+  .headers-r p {
+    display: inline-block;
+    font-weight: 400;
+  }
+  
+  .grey {
+    background: rgb(133, 133, 133);
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+  }
+  .address{
+      float: right;
+      text-align: right;
+  }
+  .email{
+      float: right;
+  }
+  .phone{
+      float: right;
+  }
+  .edu{
+      text-align: left;
+      margin-left: 2em;
+  }
+  .cname{
+      float: left;
+      text-align: left;
+      margin-left: 2em;
+  }
+  .degree{
+      float: left;
+      text-align: left;
+      margin-left: 2em;
+  }
+  .course{
+    float: left;
+    text-align: left;
+    margin-left: 2em;
+  }
+  .yop{
+    float: left;
+    text-align: left;
+    margin-left: 2em;
+  }
+
+  /* //-- core typography and style -- */
+#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
+h2 { font-size: 152% }
+h3, h4 { font-size: 122%; }
+h1, h2, h3, h4 { color: #333; }
+p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+
+a:hover { text-decoration: none; }
+strong { font-weight: bold; }
+li { line-height: 24px; border-bottom: 1px solid #ccc; }
+p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
+p.enlarge span { color: #000 }
+.contact-info { margin-top: 7px; }
+.first h2 { font-style: italic; }
+.last { border-bottom: 0 }
+  
+  
+ 

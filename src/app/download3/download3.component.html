@@ -1,0 +1,164 @@
+<!-- header -->
+<header>
+    <!-- header inner -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                    <div class="full">
+                        <div class="center-desk">
+                            <div class="logo">
+                                <img src="/assets/images/logo.png"  width="50%" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <p class="navd">Personal Info</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Experience</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Education</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Skills</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Choose Template</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navs">Download</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header inner -->
+<!-- end header -->
+
+<!-- Hosting -->
+<div style="background-image: url(/assets/images/background.jpg);">
+    <div >
+<div id="page-wrap" #doc2>
+    
+    
+    <div id="contact-info" class="vcard">
+    
+        <!-- Microformats! -->
+    
+        <h1 class="fn">{{userdata.personal.firstname}} {{userdata.personal.lastname}}</h1>
+        
+        <h4>
+            Cell: <span class="tel">+91 {{userdata.personal.phone}}</span><br />
+            Email: <a class="email" href="mailto:{{userdata.personal.email}}">{{userdata.personal.email}}</a><br/>
+            Address: <span>{{userdata.personal.address}},{{userdata.personal.city}}-{{userdata.personal.zipcode}},{{userdata.personal.state}}</span>
+        </h4>
+    </div><br>
+            
+    <div id="objective">
+        <h4 contenteditable="true" style="font-weight: 400; font-size: 18px; margin-left: 3em; margin-right: 3em;">
+            I am an outgoing and energetic (ask anybody) young professional, seeking a 
+            career that fits my professional skills, personality, and murderous tendencies. 
+            My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. 
+            I can bring world domination to your organization. 
+        </h4>
+    </div><br>
+    
+    <div class="clear"></div>
+    
+    <dl>
+        <dd class="clear"></dd>
+        
+        <dt>Education</dt>
+        <dd>
+            <h2>{{userdata.education.scname}}- {{userdata.education.city}}, {{userdata.education.state}}</h2>
+            <p style="font-size: 16px; font-weight: 400;">Branch: {{userdata.education.degree}}, {{userdata.education.study}}<br />
+               Year of passing: {{userdata.education.pass}}</p>
+        </dd>
+        
+        <dd class="clear"></dd>
+        
+        <dt>Skills</dt>
+        <dd >
+            <div class="talent">
+                <h2>{{userdata.skill.skill1}}</h2>
+                <p contenteditable="true">Level: {{userdata.skill.level1}}</p>
+            </div>
+            <div class="talent">
+                <h2>{{userdata.skill.skill2}}</h2>
+                <p contenteditable="true">Level: {{userdata.skill.level2}}</p>
+            </div>
+            <div class="talent">
+                <h2>{{userdata.skill.skill3}}</h2>
+                <p contenteditable="true">Level: {{userdata.skill.level3}}</p>
+            </div>
+            <div class="talent">
+                <h2>{{userdata.skill.skill4}}</h2>
+                <p contenteditable="true">Level: {{userdata.skill.level4}}</p>
+            </div>
+            <div class="talent">
+                <h2>{{userdata.skill.skill5}}</h2>
+                <p contenteditable="true">Level: {{userdata.skill.level5}}</p>
+            </div>
+        </dd>
+        
+        <dd class="clear"></dd>
+        
+        <dt>Experience</dt>
+        <dd>
+            <h2>{{userdata.experience.employer}}</h2>
+            <span style="font-size: 16px; font-weight: 400;">{{userdata.experience.jobtitle}} <br> {{userdata.experience.city}},{{userdata.experience.state}} <br> {{userdata.experience.startdate}} to {{userdata.experience.enddate}}</span>
+        </dd>
+        
+        <dd class="clear"></dd>
+        
+    </dl>
+    
+    <div class="clear"></div>
+    <h1></h1>
+</div>
+        <br><br><div class="row">
+            <div class="col-md-12">
+                <div class="web_hosting">
+                    <div class="formnav">
+                        <a routerLink="/selecttemplate">previous</a>
+                        <a (click)="removeuser(); save();">download</a>
+                    </div>
+                    <div class="formnav">
+                        <a href="/userhome">exit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Hosting -->
+
+<!--  footer -->
+<footer>
+    <div class="footer">
+        <div class="copyrightuser">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2021 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->

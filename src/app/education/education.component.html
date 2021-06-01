@@ -1,0 +1,136 @@
+<!-- header -->
+<header>
+    <!-- header inner -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                    <div class="full">
+                        <div class="center-desk">
+                            <div class="logo">
+                                <img src="/assets/images/logo.png"  width="50%" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <p class="navd">Personal Info</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Experience</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navs">Education</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Skills</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Choose Template</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Download</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header inner -->
+<!-- end header -->
+
+<!-- Hosting -->
+<div id="" class="hosting formc" style="background-image: url(/assets/images/background.jpg);">
+    <div class="formside">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="formpage top">
+                    <form class="topcolor" [formGroup]="educationform" (ngSubmit)="addeducation()">
+                    <h2>Education Details</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>School/College Name</label>
+                                <input type="text" name="scname" class="form-control" placeholder="School/College Name" formControlName="scname" [(ngModel)]="educationdetails.scname">
+                            </div>
+                            <div class="col-md-6">
+                                <label>City</label>
+                                <input type="text" name="city" class="form-control" placeholder="City" formControlName="city" [(ngModel)]="educationdetails.city">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>State</label>
+                                <input type="text" name="state" class="form-control" placeholder="State" formControlName="state" [(ngModel)]="educationdetails.state">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Select the Degree</label>
+                                <select class="form-select" name="degree" aria-label="Default" formControlName="degree" [(ngModel)]="educationdetails.degree">
+                                    <option selected disabled>-select-</option>
+                                    <option value="Bachelor of Arts">Bachelor of Arts</option><option value="Bachelor of Science">Bachelor of Science</option><option value="Bachelor of Commerce">Bachelor of Commerce</option>
+                                    <option value="Bachelor of Engg./Tech">Bachelor of Engg./Tech</option><option value="BMS/BBA/BBS">BMS/BBA/BBS</option><option value="Bachelor of Law">Bachelor of Law</option>
+                                    <option value="Bachelor of Medicine (MBBS)">Bachelor of Medicine (MBBS)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Field of Study</label>
+                                <input type="text" name="study" class="form-control" placeholder="eg. Engineering" formControlName="study" [(ngModel)]="educationdetails.study">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Month & year of Pass</label>
+                                <input type="month" name="pass" class="form-control" formControlName="pass" [(ngModel)]="educationdetails.pass">
+                            </div>
+                        </div>
+                        <div id="saved" class="show">
+                            <input type="submit" name="submit" [disabled]="educationform.invalid" value="save">
+                            <div *ngIf="educationform.invalid">
+                                *all the field should be filled.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="web_hosting">
+                    <div class="formnav">
+                        <a routerLink="/experience">previous</a>
+                        <a routerLink="/skills">next</a>
+                    </div>
+                    <div class="formnav">
+                        <a href="/userhome">exit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Hosting -->
+
+<!--  footer -->
+<footer>
+    <div class="footer">
+        <div class="copyrightuser">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2021 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->

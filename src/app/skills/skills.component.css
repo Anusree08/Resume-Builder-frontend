@@ -1,0 +1,50 @@
+.formc{
+    color: white;
+}
+.formc h2{
+    color: white;
+}
+.formc label{
+    margin-top: 2em;
+}
+.top{
+    margin-top: -5em;
+}
+.topcolor{
+    border-radius: 1em;
+    background: #0c0f38da;
+    padding: 10px;
+}
+.topbutton{
+    border: transparent;
+    background: transparent;
+    margin-top: 2.5em;
+    color: white;
+}
+.topbutton:hover{
+    color: rgba(255, 0, 0, 0.623);
+}
+.show input[type = "submit"]{
+    background: #528818;
+    margin: 3% 0% 0% 0%;
+    border-radius: 1em;
+    padding: 1% 2% 1% 2%;
+}
+.show{
+    margin-top: 5%;
+}
+/* //-- core typography and style -- */
+#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
+h2 { font-size: 152% }
+h3, h4 { font-size: 122%; }
+h1, h2, h3, h4 { color: #333; }
+p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+
+a:hover { text-decoration: none; }
+strong { font-weight: bold; }
+li { line-height: 24px; border-bottom: 1px solid #ccc; }
+p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
+p.enlarge span { color: #000 }
+.contact-info { margin-top: 7px; }
+.first h2 { font-style: italic; }
+.last { border-bottom: 0 }
